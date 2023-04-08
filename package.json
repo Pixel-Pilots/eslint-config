@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postversion": "gh release create $npm_package_version && git push && git push --tags"
+    "postversion": "git release $npm_package_version && git push && git push --tags"
   },
   "keywords": [],
   "author": "Anton Nystedt",
