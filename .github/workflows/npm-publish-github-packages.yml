@@ -8,15 +8,15 @@ on:
     types: [created]
 
 jobs:
-  echo:
+  install:
     runs-on: ubuntu-latest
     steps:
         with:
           node-version: 16
-      - run: echo "Starting release"
+      - run: npm install
 
   publish-gpr:
-    needs: echo
+    needs: install
     runs-on: ubuntu-latest
     permissions:
       contents: read
