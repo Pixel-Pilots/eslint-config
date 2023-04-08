@@ -8,7 +8,7 @@ on:
     types: [created]
 
 jobs:
-  install:
+  build:
     runs-on: ubuntu-latest
     steps:
         with:
@@ -16,7 +16,7 @@ jobs:
       - run: npm install
 
   publish-gpr:
-    needs: install
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: read
