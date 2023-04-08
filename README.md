@@ -22,8 +22,10 @@ Add the following to your `.eslintrc` file:
 
 ```json
 {
-  "extends": "@pixel-pilots/eslint-config",
-  "extends": "@pixel-pilots/eslint-config/react"
+  "extends": [
+    "@pixel-pilots/eslint-config",
+    "@pixel-pilots/eslint-config/react"
+  ]
 }
 ```
 
@@ -31,8 +33,7 @@ Add the following to your `.eslintrc` file:
 
 ```json
 {
-  "extends": "@pixel-pilots/eslint-config",
-  "extends": "@pixel-pilots/eslint-config/next"
+  "extends": ["@pixel-pilots/eslint-config", "@pixel-pilots/eslint-config/next"]
 }
 ```
 
