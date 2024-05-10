@@ -6,7 +6,19 @@ module.exports = {
   plugins: ["@typescript-eslint", "prettier"],
   // enabling/disabling/changing level of rules
   rules: {
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        semi: false,
+        singleQuote: true,
+        useTabs: false,
+        tabWidth: 2,
+        arrowParens: "always",
+        printWidth: 110,
+        endOfLine: "auto",
+        trailingComma: "all"
+      }
+    ],
     "no-console": "warn",
     "no-debugger": "warn",
     "no-unused-vars": "off",
@@ -20,16 +32,4 @@ module.exports = {
     ],
     "@typescript-eslint/explicit-module-boundary-types": "off",
   },
-  prettier: {
-    rules: {
-      semi: false,
-      singleQuote: true,
-      useTabs: false,
-      tabWidth: 2,
-      arrowParens: "always",
-      printWidth: 110,
-      endOfLine: "auto",
-      trailingComma: "all"
-    },
-  }
 };
