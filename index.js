@@ -20,4 +20,14 @@ module.exports = {
     ],
     "@typescript-eslint/explicit-module-boundary-types": "off",
   },
+  prettier: {
+    semi: false,
+    singleQuote: true,
+    useTabs: false,
+    tabWidth: 2,
+    arrowParens: "always",
+    printWidth: 110,
+    endOfLine: "auto",
+    trailingComma: "all"
+  }
 };
