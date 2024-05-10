@@ -1,6 +1,6 @@
 {
   "name": "@pixel-pilots/eslint-config",
-  "version": "0.1.25",
+  "version": "0.1.26",
   "description": "Eslint configurations for Pixel Pilots Design & Development Studio AB",
   "main": "index.js",
   "scripts": {
